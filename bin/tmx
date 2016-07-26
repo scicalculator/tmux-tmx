@@ -29,7 +29,8 @@ if [[ $1 == "--force" ]] ; then
 fi
 
 if [[ -z "$1" ]]; then
-    echo "Specify session name as the first argument"
+    echo "Specify session name as the first argument:"
+    tmux list-sessions
     exit
 fi
 
